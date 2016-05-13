@@ -1,0 +1,228 @@
+1.Standard organizations
+	IEEE 802.11
+	IETF
+	Wi-Fi Alliance
+
+2.802.11
+	802.11
+	802.11a
+	802.11b
+	802.11g
+	802.11n MIMO
+	802.11ac
+3.Radio Frequency
+4.Wireless Signal Characteristic
+	wavelength
+	frequency
+	amplitude
+	phase   if the peaks are in exact alignment, the signals are in phase
+		Two signals in phase result in a much greater amplitude
+5.measuring wireless power
+	coverage
+	performance
+the difference of power:
+	decibels
+	pc1 received 10mW, PC2 recieved 1mW, them the difference would be 10dB
+6.The 802.11 standard defines 4 wireless topologies
+	BSS basic service set, one AP
+	ESS extended service set, the Distribution System Medium connects two or more APs
+	IBSS independent, no AP, peer to peer, also called ad-hoc network
+	MBSS mesh
+7.RF behaviors
+	absorption
+	reflection
+	scattering
+	refraction (signal bent as it passes the medium)
+	diffraction (the bending of a signal around an object) 
+	attenuation (decrease of amplitude)
+	free space path loss (loss of signal strength due to the broadening)
+	multipath (result of two or more paths of a signal arriving at a reciever)
+	gain (amplification)
+8.RF gain
+	0dB == equal
+	3dB == twice
+	10dB == ten times
+	-3dB == half
+9.EIRP effective isotropic radiated power
+	actual power level that is radiated from the antenna
+10.beamwidth
+	based on the point where the signal reaches half power
+11. band, frequency, channel
+	a band is a group of frequencies
+	overlapping channels will cause interference
+12.narrowband --utilizes a narrowband of frequencies, such as AM/FM radio
+	not suited for wireless networking
+spread spectrum	
+	uses more frequencies
+	transmits redundant data
+13.FHSS frequency hopping spread spectrum
+	hops to other frequencies
+DSSS direct sequence spread spectrum
+	spread across the range of frequencies
+OFDM orthogonal frequency division
+	the data is divided among narrow band channels (called multiplexing)
+14.wireless networking can be accomplished by transmitting radio frequencies over two spectrum bands:(unlicensed, no restricts on use)
+	(but controlled. max transmitter power 1w, max EIRP 4w)
+	2.4 GHz
+	5.0 GHz
+	more and more devices can operate on either
+15. 2.4GHz
+	crowded  microwaves,cordless phones,bluetooth,etc
+	ISM band, industrial,scientific, medical
+	the longer wavelengths of 2.4GHz penetrate obstructions better than the shorter 5.0GHz wavelengths
+	most wireless networking devices use 2.4GHz
+	13 overlapping channels
+	3 non-overlapping channels: 1,6,11,  throughputs drop when interference happens
+	used by 802.11b,g,n (n used either)
+16. 5 GHz
+	faster data transfer rate
+	but less range
+	much less interference
+	divided into 4 sub-bands: U-NII-1, 2, 2e,3
+	each U-NII band is divided into channels
+	there are 23 non-overlapping channels!
+	802.11ac groups channels to provide higher bandwidths
+	channels 52-140 may interfere with radar system. since the radar has higher priority, is will cut down the transfer rate
+17.bandwidth vs throughput
+	bandwidth: the maximum
+	throughput: the actual
+18.antenna
+	antenna strength is measured as a reference to an isotropic radiator, using dBi
+	antenna strength can also be measured as a reference to another antenna, using dBd
+	A standard dipole antenna has a dBd of 0 and a dBi of 2.14. if a measured antenna has a dBd of 3, then it has a dBi of 3+2.14
+	2 ways to increase the power output of an antenna
+		active gain: generate more power at the transmitter
+		passive gain: direct or focus the RF signal
+19. antenna types
+	omnidirectional
+		increasing power will increase the horizontal signal but decrease the vertical signal
+	directional
+		semi-directional: short to medium distance
+		highly directional: long distance
+20. reading polar charts (azimuth and elevation charts)
+	the outer ring represents the strongest signal strength that was measured
+	shows the relative signal strength in each direction, compared to the strongest
+21. highly directional antennas (used for point-to-point communications over large distances)
+	parabolic
+	grid
+	(high gain, narrow beamwidth)
+22.semi-directional
+	sector antenna
+	especially useful in an antenna array to provide omnidirectional coverage over a long distance
+23.line of sight
+	visual line of sight(straight line)
+	RF line of sight (an additional area around the VLOS, called fresnel zones)
+	obstructions in the Fresnel zones will affect signal transmission
+24.antenna diversity
+	uses more than one antennas
+25.MIMO multiple-input, multiple-output
+	uses multiple antennas simultaneously to increase data transfer speed
+	802.11ac uses it
+26. attenuators
+	fixed-loss  provides a set amount of dB loss
+	variable-loss  can be adjusted to different amount
+27.VSWR  voltage standing wave ratio
+	a measurement of the change in impedances to an AC signal
+	if there are impedance variations between devices, VSWR occurs
+	usually occurs between the transmitter, cable, and antenna
+	represented as a numerical relationship
+	1.5:1  means radiated power is 96%
+	2:1  89%
+	6:1  50%, lost 3dB
+	VSWR can be minimized by making sure that the impedance of all wireless networking equipment is matched
+28. three main considerations when installing an antenna
+	VSWR
+	signal loss, due to inferior or improperly installed components
+	antenna mounting: proper placement. increasing signal power will change the radiation pattern
+29.communication methods
+	simplex communication: device can only transmit or receive. (AM/FM radio)
+	half-duplex: both devices have the ability to transmit and receive, but only one device can transmit at a time. (Walkie-talkies)  802.11 wireless network currently uses this.
+	dull-duplex: both devices can transmit and receive at the same time (telephone) 
+30. access point vs hotspot
+	a WAP estabilshes a coverage area for wireless connectivity
+	a hotspot is the coverage area created by a WAP
+31. ssid,  service set identifier
+	ssid cloaking by not broadcasting it is damn weak
+32. bss and bssid
+	bssid is the AP's MAC address
+33. ess
+	seamless roaming: coverage areas overlap
+	nomadic roaming: coverage areas seperate
+	colocation: provides increased client capacity by overlaping a lot
+34. IBSS
+	each client station must have the same SSID WLAN name
+	each client station transmits frames directly to one another
+	half-duplex
+25. MBSS
+	used to provide wireless distribution of network traffic, not just direct traffic to wired network
+	the mesh points function very similar to routers in wired network
+26. access point modes (not all the APs provides all the modes)
+	root/AP/access mode: the most common mode
+	bridge mode: operates as a wireless bridge to connect two wired network
+	workgroup bridge mode: this AP is a client to another AP and provides a network connection for the equipment connected to its Ethernet port 
+	repeater mode: the AP acts as a repeater to extend the coverage of another AP on the same channel
+	mesh mode: as a wireless backhaul radio for a mesh environment
+	scanner mode
+client stations can operate in 2 modes:
+	infrastructure mode: connect to an AP
+	ad hoc mode
+27.CSMA/CD  carrier sense multiple access/collosion detection
+	used on 802.3(wired) networks  (full-duplex)
+	detect collision, stop transmitting, wait a random amount a time and start again
+CSMA/CA  collision avoidance
+	used on 802.11(wireless) (half-duplex)
+	cannot transmit at the same time, so cannot detect collsions when they occur
+	so the device just listens for a random time to see if the network is in use
+	every frame sent on an 802.11 network is acknowledged by the receiver with an ACK frame
+28.5 major aspects of wireless security
+	data protection
+	three As, authentication(who?) authorization(what can do?) accounting(auditing, tracking) 
+	segmentation: separating user traffic so that security breaches can be confined to specific areas. Usually use firewalls, routers, LANs, etc
+	monitoring
+	security policy, including responsibilities, threats, potential financial impacts, etc
+29.data protection
+	wired networks can be divided into internal private network, which is trusted and no encryption required, and external public network, which is not trusted. But wireless network should be treated as untrusted by nature.
+	2 most common encryption algorithms used to protect wireless data: RC4 and AES
+	RC4 is not as secured as AES
+30. monitoring
+	WIDS  wireless intrusion detection system
+	WIPS  wireless intrusion protection system
+31. client authentiaction
+	wired world: based on a shared secret, such as password
+	wireless world: open authentication(no credentials, join using the ssid), WEP, EAP, WPA
+32. WEP wireless equivalence privacy
+	deprecated, but still offered as an option to provide compatibility
+EAP  a framework for security protocal
+WPA and WPA2 support 2 authentication modes:
+	personal mode: a pre-shared key with max length of 64 characters is used
+	enterprise mode : an 802.1x EAP authentcation method is used to authenticat0e clients
+33. 802.1x (IEEE 802.1x security standard for port-based network access control)
+involves 3 parts:
+	a client desiring access 
+	a WAP
+	an authentication server(RADIUS/EAP)
+34. MAC filtering
+	however, MAC address can be easily spoofed	
+35.rogue AP
+	an insertion of extra, unauthorized hardware in order to bypass the security measures
+	preventions: 802.1x should be used to secure all open network ports
+	WIDS can identify rogue APs
+	physical security
+36. soft APs
+	a software implementation of a wifi adapter
+	could function as a rogue AP, so be sure to adapt approprate secure measures
+37. eavesdropping
+	casual: normal WLAN discovery. software programs send out null probe request and the APs response with SSID, channel, encryption info, etc
+	malicious: the intent determines it legal or illegal
+38.DoS attack
+	can appear in layer 1, physical layer, as well as layer 2, data link layer.
+	layer1: RF jamming attack
+	layer2: tampering with 802.11 frames.  alreadily recognized by most WIDS/WIPS systems
+39. SNR  signal-to-noise ratio
+	measured in dB
+	higher dB indicates the signal is stronger than the noise.  25dB or greater is considered a good quality
+	nagetive dB indicates the signal is less than the noise
+	low SNR will result in layer 2 frame retransmission because the signal cannot be read and ACKs will not be sent
+40. hidden node obstruction
+	CSMA/CA, when users cannot detect each other but can detect the AP, the scan to avoid collision becomes useless and the retransmission rate increases dramatically
+	can be found using a protocol analyzer

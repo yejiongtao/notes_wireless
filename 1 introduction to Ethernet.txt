@@ -1,0 +1,17 @@
+1. coaxial Ethernet
+	employs a bus topology
+	every computer sends Ethernet signals over a single bus cable
+	a failure anywhere on the cable brings the entire network system to a halt
+twisted-pair Ethernet
+	star-wired cabling topology, in which the computers are all connected to a central point
+100 Mb/s Ethernet
+	multispeed twisted-pair Ethernet interfaces could be built, operating at either 10 or 100 Mb/s
+	uses the Auto-Negotiation protocol to automatically configure the speed
+Gigabit Ethernet
+10,40,100 Gb/s Ethernet
+	full-duplex
+
+2. PoE, Power over Ethernet
+	provide power for the device using the Ethernet cable
+	widely adopted for deploying wireless APs
+
